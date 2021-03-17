@@ -1,0 +1,16 @@
+backend:
+    name: git-gateway
+    branch: main # Branch to update
+
+media_folder: media_folder
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads"
+
+collections:
+    - name: post
+    label: Post
+    folder: posts
+    create: true
+    fields:
+        - {name: title, label: Title}
+        - {name: body, label: Body, widget: markdown}
